@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaSctipt Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+ 
+<body>
+
+    <div class="borderbox">
+        <form name="form">
+        <div class="display">
+                    <input type="text" placeholder="0" name="displayResult" id="result" /> 
+        </div>
+            <div class="buttons">
+              <div class="row">
+                  <input type="button" name="me7" value="7" onClick="calculate(me7.value)">
+                  <input type="button" name="me8" value="8" onClick="calculate(me8.value)">
+                  <input type="button" name="me9" value="9" onClick="calculate(me9.value)">
+                  <input type="button" name="meaddition" value="+" onClick="calculate(meaddition.value)">
+                  <input type="button"  value="c" onclick="clr()"/>
+                </div>
+                
+                <div class="row">
+                <input type="button" name="me4" value="4" onClick="calculate(me4.value)">
+                  <input type="button" name="me5" value="5" onClick="calculate(me5.value)">
+                  <input type="button" name="me6" value="6" onClick="calculate(me6.value)">
+                  <input type="button" name="mesubtract" value="-" onClick="calculate(mesubtract.value)">
+                  <input type="button" name="me11percentage" value="%" onclick="percen()">
+                </div>
+                
+                <div class="row">
+                <input type="button" name="me1" value="1" onClick="calculate(me1.value)">
+                  <input type="button" name="me2" value="2" onClick="calculate(me2.value)">
+                  <input type="button" name="me3" value="3" onClick="calculate(me3.value)">
+                  <input type="button" name="memultiply" value="*" onClick="calculate(memultiply.value)">
+                  <input type="button" value="sqr" onclick="squareroot()"/>
+                </div>
+                
+                <div class="row">
+                <input type="button" name="me0" value="0" onClick="calculate(me0.value)">
+                  <input type="button" name="medot" value="." onClick="calculate(medot.value)">
+                  <input type="button" name="medivision" value="/" onClick="calculate(medivision.value)">
+                  <input type="button" class="red" value="=" onClick="displayResult.value=eval(displayResult.value)">
+                  <input type="button" value="abs" onclick="absolute()"/>
+                </div>
+            </div>
+        
+        </form>
+    </div>
+<script src="main.js"></script>
+</script>
+</body>
+    
+</html>
